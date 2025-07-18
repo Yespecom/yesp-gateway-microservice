@@ -1,0 +1,23 @@
+{
+  "name": "multi-tenant-payment-gateway",
+  "version": "1.0.0",
+  "description": "A multi-tenant payment gateway microservice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4",
+    "razorpay": "^2.9.4",
+    "stripe": "^16.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
