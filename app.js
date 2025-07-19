@@ -1,5 +1,6 @@
 require("dotenv").config()
 const express = require("express")
+const cors = require("cors") // Import the cors package
 const { connectMainDB } = require("./config/db")
 const gatewayRoutes = require("./routes/gatewayRoutes")
 const paymentRoutes = require("./routes/paymentRoutes")
@@ -8,6 +9,7 @@ const app = express()
 const PORT = process.env.PORT || 3000
 
 // Middleware
+app.use(cors()) // Use cors middleware to enable CORS for all routes
 app.use(express.json()) // For parsing application/json
 
 // Connect to the main database
